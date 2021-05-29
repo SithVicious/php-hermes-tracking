@@ -1,8 +1,4 @@
 <?php
-	/*
-	 * Copyright (c) 2021. Tongmaster Seasonings Ltd
-	 */
-
 
 	class Tracking_Hermes
 	{
