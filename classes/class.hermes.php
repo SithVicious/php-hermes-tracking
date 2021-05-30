@@ -1,9 +1,18 @@
 <?php
-
 	class Tracking_Hermes
 	{
 
-		var $apiKey = 'R6xkX4kqK4U7UxqTNraxmXrnPi8cFPZ6'; # Hard coded, but we are being naughty and using Hermes own api key
+		var $apiKey = '';
+
+		function __construct($apiKey=NULL)
+		{
+			if (is_null($apiKey))
+			{
+				$this->apiKey = 'R6xkX4kqK4U7UxqTNraxmXrnPi8cFPZ6'; # Hard coded, but we are being naughty and using Hermes own api key
+			} else {
+				$this->apiKey = $apiKey;
+			}
+		}
 
 		public function getTracking($tracking_code, $postcode = NULL)
 		{
