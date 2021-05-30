@@ -12,7 +12,6 @@ Nothing fancy, just copy/paste the class and tailor your code around the example
 Check example.php
 
 ```php
-header('Content-Type: application/json');
 require_once('classes/class.hermes.php');
 
 
